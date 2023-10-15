@@ -7,7 +7,7 @@ router.get('/', async (req, res) => {
   const correoCompleto = req.query.mail;
   try {
     if (!correoCompleto) {
-      const formattedError = {status: false, message: 'Debes proporcionar un correo'};
+      const formattedError = {status: false, message: 'You must provide an email'};
       const formattedResults = JSON.stringify(formattedError, null, 2);
       return res.send(formattedResults);
     }
@@ -17,7 +17,7 @@ router.get('/', async (req, res) => {
     res.send(formattedResults2);
   } catch (error) {
     console.error(error);
-    res.status(500).json({ error: 'Error al obtener los correos' });
+    res.status(500).json({ error: 'Error getting emails' });
   }
 });
 
