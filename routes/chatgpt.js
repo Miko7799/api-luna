@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
     res.send(formattedResults);
   } catch (error) {
     console.error(error);
-    res.status(500).json({ error: 'Error en la solicitud de chatgpt' });
+    res.status(500).json({ error: 'chatgpt request error' });
   }
 });
 
