@@ -190,7 +190,7 @@ app.use(function(req, res, next) {
 const clearTmpFiles = () => {
   const tmpDir = './tmp';
   fs.readdir(tmpDir, (err, files) => {
-    if (err) return console.error('Error al leer directorio temporal:', err);
+    if (err) return console.error('Error reading temporary directory:', err);
     const filesToDelete = files.filter((file) => file !== 'file');
     if (filesToDelete.length > 0) {
       filesToDelete.forEach((file) => {
