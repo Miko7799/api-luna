@@ -88,7 +88,7 @@ const getUptime = () => {
   const hours = Math.floor(uptimeInSeconds / 3600);
   const minutes = Math.floor((uptimeInSeconds % 3600) / 60);
   const seconds = uptimeInSeconds % 60;
-  return `${hours} horas, ${minutes} minutos, ${seconds} segundos`;
+  return `${hours} hours, ${minutes} minutes, ${seconds} seconds`;
 };
 
 // Subpaginas y usos
@@ -167,7 +167,7 @@ app.get('/status', (req, res) => {
   totalRequests--; 
   const response = {
     uptime: uptime,
-    latencia: `${averageResponseTime} ms`,
+    latency: `${averageResponseTime} ms`,
     totalRequests: totalRequests,
     totalVisitors: totalVisitors,
     creator: 'Miko',
