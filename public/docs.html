@@ -1,381 +1,381 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <!-- icon animated -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.8/font-awesome-animation.min.css"/>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta property="og:image" content="https://github.com/Miko.png">
-    <title>API | Luna</title>
-    <link href="https://BrunoSobrino.github.io/template-api/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://BrunoSobrino.github.io/template-api/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="https://BrunoSobrino.github.io/template-api/css/default.css" rel="stylesheet">
-    <link href="https://BrunoSobrino.github.io/template-api/css/style.css" rel="stylesheet">
-</head>
-<style>
-    h1 {
-        text-align: center;
-    }
-.text-container {
-    display: inline-flex;
-    align-items: center;
-}
-
-.fire-text {
-    font-size: 2.5em;
-    color: #ff5733;
-    text-shadow: 0 0 10px #ff5733, 0 0 20px #ff5733, 0 0 30px #ff5733; 
-    animation: burn 0.5s infinite alternate; 
-    display: inline-block;
-    white-space: nowrap; 
-}
-
-@keyframes burn {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0.5;
-    }
-}
-.fire-emoji {
-    font-size: 0.9em; 
-    color: #ff5733;
-}
-    .button-style {
-        background-color: rgba(0, 0, 128, 0.0); 
-        color: #fff; 
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-        outline: none !important; 
-        border: 0; 
-    }
-    .button-style:active {
-        outline: none !important;
-        border: 0; 
-    }
-    .age-restriction-icon {
-        background-color: transparent;
-        color: white;
-        padding: 5px 0px;
-        font-weight: bold;
-        font-size: 16px;
-        text-align: left;
-        white-space: nowrap;
-        margin-right: 5px
-    }
-    @media (max-width: 768px) {
-        .age-restriction-icon {
-        padding: 5px 0; 
-        margin-left: 10px; 
-      }
-    }    
-</style>
-  <body id="page-top" class="dark-mode">
-    <div id="wrapper">
-        <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
-<a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-    <img src="https://github.com/BrunoSobrino.png" alt="BrunoSobrino" width="48" height="48" style="border-radius: 50%;">
-    <div class="sidebar-brand-text mx-3" style="white-space: nowrap;">By BrunoSobrino</div>
-</a>
-<audio autoplay loop>
-    <source src="music.mp3" type="audio/mpeg">
-    <source src="music.wav" type="audio/wav">
-</audio>
-            <hr class="sidebar-divider my-0">
-            <li class="nav-item active"></li>
-            <hr class="sidebar-divider">
-            <div class="sidebar-heading">Features</div>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDownload" aria-expanded="true" aria-controls="collapseDownload">
-                    <i class="fa fa-fw fa-arrow-down"></i>
-                    <span>Descargadores</span>
-                </a>
-                <div id="collapseDownload" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
-                    <div class="py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Downloaders & Medias</h6>
-                        <a class="collapse-item" target="_blank" href="/api/v1/ytmp3?url=https://youtu.be/JLWRZ8eWyZo?si=EmeS9fJvS_OkDk7p">YTMP3 V1</a>
-                        <a class="collapse-item" target="_blank" href="/api/v2/ytmp3?url=https://youtu.be/JLWRZ8eWyZo?si=EmeS9fJvS_OkDk7p">YTMP3 V2</a>
-                        <a class="collapse-item" target="_blank" href="/api/v1/ytmp4?url=https://youtu.be/JLWRZ8eWyZo?si=EmeS9fJvS_OkDk7p">YTMP4 V1</a>
-                        <a class="collapse-item" target="_blank" href="/api/v2/ytmp4?url=https://youtu.be/JLWRZ8eWyZo?si=EmeS9fJvS_OkDk7p">YTMP4 V2</a>
-                        <a class="collapse-item" target="_blank" href="/api/ytdl?url=https://youtu.be/JLWRZ8eWyZo?si=EmeS9fJvSOkDk7p">YTDL</a>
-                        <a class="collapse-item" target="_blank" href="/api/ytplay?text=begin%20you">YT Play</a>
-                        <a class="collapse-item" target="_blank" href="/api/spotifydl?text=maneskin%20beggin">SpotifyDL</a>
-                        <a class="collapse-item" target="_blank" href="/api/spotifyinfo?text=https://open.spotify.com/track/3Wrjm47oTz2sjIgck11l5e">SpotifyInfo</a>
-                        <a class="collapse-item" target="_blank" href="/api/v1/igdl?url=https://www.instagram.com/reel/Cc0NuYBg8CR/?utm_source=ig_web_copy_link">InstagramDL V1</a>
-                        <a class="collapse-item" target="_blank" href="/api/v2/igdl?url=https://www.instagram.com/reel/Cc0NuYBg8CR/?utm_source=ig_web_copy_link">InstagramDL V2</a>
-                        <a class="collapse-item" target="_blank" href="/api/tiktok?url=https://vm.tiktok.com/ZMjPXawEV">TikTokDL</a>
-                        <a class="collapse-item" target="_blank" href="/api/ttimg?url=https://vm.tiktok.com/ZM2cqBRVS">TTImg</a>
-                        <a class="collapse-item" target="_blank" href="/api/facebook?url=https://fb.watch/fOTpgn6UFQ">Facebook DL</a>
-                        <a class="collapse-item" target="_blank" href="/api/xnxxdl?url=https://www.xnxx.com/video-11qev1b8/estudiante_latina_se_da_unos_sentones_">XNXX DL</a>
-                    </div>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSearch" aria-expanded="true" aria-controls="collapseSearch">
-                    <i class="fas fa-fw fa-search"></i>
-                    <span>Buscadores</span>
-                </a>
-                <div id="collapseSearch" class="collapse" aria-labelledby="headingSearch" data-parent="#accordionSidebar">
-                    <div class="py-2 collapse-inner rounded">
-                        <h6 class="collapse-header"> Searchs Features</h6>
-                        <a class="collapse-item" target="_blank" href="/api/ytsearch?text=begin%20you">YT Search</a>
-                        <a class="collapse-item" target="_blank" href="/api/spotifysearch?text=maneskin%20beggin">Spotify Search</a>
-                        <a class="collapse-item" target="_blank" href="/api/xnxxsearch?text=prima%20sentones">XNXX Search</a>
-                    </div>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTools" aria-expanded="true" aria-controls="collapseTools">
-                    <i class="fas fa-fw fa-tools"></i>
-                    <span>Herramientas</span>
-                </a>
-                <div id="collapseTools" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-                    <div class="py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Tools Features</h6>
-                        <a class="collapse-item" target="_blank" href="/api/chatgpt?text=Hola&lenguaje=es">ChatGPT</a>
-                        <a class="collapse-item" target="_blank" href="/api/tempmail/getmail">TempMail getMail</a>
-                        <a class="collapse-item" target="_blank" href="/api/tempmail/getmessages?mail=miusuario@ejemplo.com">TempMail getMessage</a>
-                    </div>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseNsfw" aria-expanded="true" aria-controls="collapseNsfw">
-                    <i class="fas fa-exclamation-triangle"></i>
-                    <span>NSFW</span>
-                </a>
-                <div id="collapseNsfw" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-                    <div class="py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">NSFW Random</h6>
-                        <a class="collapse-item" target="_blank" href="/api/nsfw/nsfwass">nsfwass</a>
-                        <a class="collapse-item" target="_blank" href="/api/nsfw/nsfwbdsm">nsfwbdsm</a>
-                        <a class="collapse-item" target="_blank" href="/api/nsfw/nsfwcum">nsfwcum</a>
-                        <a class="collapse-item" target="_blank" href="/api/nsfw/nsfwero">nsfwero</a>
-                        <a class="collapse-item" target="_blank" href="/api/nsfw/nsfwfemdom">nsfwfemdom</a>
-                        <a class="collapse-item" target="_blank" href="/api/nsfw/nsfwfoot">nsfwfoot</a>
-                        <a class="collapse-item" target="_blank" href="/api/nsfw/nsfwglass">nsfwglass</a>
-                        <a class="collapse-item" target="_blank" href="/api/nsfw/nsfwloli">nswfloli</a>
-                        <a class="collapse-item" target="_blank" href="/api/nsfw/nsfworgy">nsfworgy</a>
-                        <a class="collapse-item" target="_blank" href="/api/nsfw/nsfwtrap">nsfwtrap</a>
-                        <a class="collapse-item" target="_blank" href="/api/nsfw/ecchi">ecchi</a>
-                        <a class="collapse-item" target="_blank" href="/api/nsfw/hentai">hentai</a>
-                        <a class="collapse-item" target="_blank" href="/api/nsfw/yuri">yuri</a>
-                        <a class="collapse-item" target="_blank" href="/api/nsfw/yaoi">yaoi</a>
-                    </div>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse18plus" aria-expanded="true" aria-controls="collapse18plus">
-                    <span class="age-restriction-icon">+18</span>
-                    <span>Random +18</span>
-                </a>
-                <div id="collapse18plus" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-                    <div class="py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">+18 Random</h6>
-                        <a class="collapse-item" target="_blank" href="/api/adult/packgirl">Packs Girl</a>
-                        <a class="collapse-item" target="_blank" href="/api/adult/packmen">Packs Mens</a>
-                        <a class="collapse-item" target="_blank" href="/api/adult/gawrgura">Gawr Gura</a>
-                        <a class="collapse-item" target="_blank" href="/api/adult/booty">Booty</a>
-                        <a class="collapse-item" target="_blank" href="/api/adult/furro">Furro</a>
-                        <a class="collapse-item" target="_blank" href="/api/adult/imglesbian">IMG Lesbian</a>
-                        <a class="collapse-item" target="_blank" href="/api/adult/panties">Panties</a>
-                        <a class="collapse-item" target="_blank" href="/api/adult/pechos">Pechos</a>
-                        <a class="collapse-item" target="_blank" href="/api/adult/pene">Pene</a>
-                        <a class="collapse-item" target="_blank" href="/api/adult/porno">Porno</a>
-                        <a class="collapse-item" target="_blank" href="/api/adult/tetas">Tetas</a>
-                        <a class="collapse-item" target="_blank" href="/api/adult/videoxxx">Viedeo XXX</a>
-                        <a class="collapse-item" target="_blank" href="/api/adult/videoxxxlesbi">Viedeo XXX Lésbico</a>
-                    </div>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapAnimes" aria-expanded="true" aria-controls="collapAnimes">
-                    <i class="fas fa-fw fa-tv"></i>
-                    <span>Random Anime</span>
-                </a>
-                <div id="collapAnimes" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-                    <div class="py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Anime Random</h6>
-                        <a class="collapse-item" target="_blank" href="/api/anime/lolivid">loli video</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/cosplay">cosplay</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/akira">akira</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/akiyama">akiyama</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/anna">anna</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/asuna">asuna</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/ayuzawa">ayuzawa</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/boruto">boruto</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/chiho">chiho</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/chitoge">chitoge</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/deidara">deidara</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/eba">eba</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/elaina">elaina</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/emilia">emilia</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/erza">erza</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/hestia">hestia</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/hinata">hinata</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/inori">inori</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/isuzu">isuzu</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/itachi">itachi</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/itori">itori</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/kaga">kaga</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/kagura">kagura</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/kaori">kaori</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/keneki">keneki</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/kotori">kotori</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/kurumi">kurumi</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/madara">madara</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/mikasa">mikasa</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/miku">miku</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/minato">minato</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/naruto">naruto</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/nezuko">nezuko</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/sagiri">sagiri</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/sakura">sakura</a>
-                        <a class="collapse-item" target="_blank" href="/api/anime/sasuke">sasuke</a>
-                    </div>
-                </div>
-            </li>
-            <hr class="sidebar-divider">
-            <div class="sidebar-heading">Contact</div>
-            <li class="nav-item">
-                <a class="nav-link" href="https://api.whatsapp.com/send/?phone=5219996125657&text=&type=phone_number&app_absent=0">
-                    <i class="fab fa-fw fa-whatsapp"></i>
-                    <span>WhatsApp</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.paypal.com/paypalme/TheShadowBrokers133">
-                    <i class="fab fa-fw fa-paypal"></i>
-                    <span>PayPal</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://github.com/BrunoSobrino">
-                    <i class="fab fa-fw fa-github"></i>
-                    <span>GitHub</span>
-                </a>
-            </li>            
-            <hr class="sidebar-divider">
-            <button id="toggleButton" class="button-style">Pausar Música</button>
-        </ul>
-<!-- Sidebar -->
-<div id="content-wrapper" class="d-flex flex-column">
-    <div id="content">
-        <!-- TopBar -->
-        <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top">
-            <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
-                <i class="fa fa-bars"></i>
-            </button>
-            <div class="text-container">
-                <h1 class="my-4 fire-text">API - EMPIRE <span class="fire-emoji">🔥</span></h1>
-            </div>
-            <ul class="navbar-nav ml-auto">
-                <div class="topbar-divider d-none d-sm-block"></div>
-            </ul>
-        </nav>
-        <!-- Sidebar -->
-                <!-- Container Fluid-->
-                <div class="container-fluid" id="container-wrapper">
-                    <div class="card h-50 mb-4">
-                        <div class="card-body">
-                            <div class="row align-items-center">
-                                <div class="col mr-2">
-                                    <h3 style="margin-bottom: 0;"><i class="fas fa-ruler text-danger"></i> INFORMACIÓN:</h3>
-                                    <div class="card-body mb-3">
-                                        <ol>
-                                            <li>API en desarrollo.</li>
-                                            <li>API 100% editable y gratuita.</li>
-                                        </ol>
-                                    </div>
-                                </div>
-                                <div class="col-auto"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <!-- Earnings (Annual) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card h-50">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-uppercase mb-1">Visitor</div>
-                                            <div id="totalVisitors"></div>
-                                            <!-- div class="h5 mb-0 font-weight-bold"><%= totalVisitors %></div -->
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fa fa-user faa-ring animated fa-2x text-primary"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Pending Requests Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card h-50">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-uppercase mb-1">Requests</div>
-                                            <div id="totalRequests"></div>
-                                            <!-- div class="h5 mb-0 font-weight-bold"><%= totalRequests %></div -->
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-calendar faa-wrench animated fa-2x text-primary"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Container Fluid -->
-            </div>
-            <!-- Footer -->
-            <footer class="sticky-footer">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        Hecho por <i class="fa fa-heart faa-flash animated"></i>
-                        <a href="https://github.com/BrunoSobrino" target="_blank" style="color: #fff;">BrunoSobrino</a>
-                    </div>
-                </div>
-            </footer>
-            <!-- Footer -->
-        </div>
-    </div>
-
-    <!-- Scroll to top -->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js"></script>
-<script>
-    fetch('/status').then(response => response.json()).then(data => {
-        document.getElementById('totalRequests').textContent = data.totalRequests;
-        document.getElementById('totalVisitors').textContent = data.totalVisitors;
-      });
-    document.addEventListener("DOMContentLoaded", function () {
-        const audioElement = document.querySelector("audio");
-        const toggleButton = document.getElementById("toggleButton");
-        function toggleAudio() {
-            if (audioElement.paused) {
-                audioElement.play();
-                toggleButton.textContent = "Pausar Música";
-            } else {
-                audioElement.pause();
-                toggleButton.textContent = "Reanudar Música";
-            }
-        }
-        toggleButton.addEventListener("click", toggleAudio);
-    });
-</script>
-    <script src="https://BrunoSobrino.github.io/template-api/vendor/jquery/jquery.min.js"></script>
-    <script src="https://BrunoSobrino.github.io/template-api/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://BrunoSobrino.github.io/template-api/vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="https://BrunoSobrino.github.io/template-api/js/ruang-admin.min.js"></script>
-</body>
-</html>
+<!DOCTYPE html> 
+ <html lang="es"> 
+ <head> 
+     <!-- icon animated --> 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.8/font-awesome-animation.min.css"/> 
+     <meta charset="utf-8"> 
+     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+     <meta name="description" content=""> 
+     <meta name="author" content=""> 
+     <meta property="og:image" content="https://github.com/Miko.png"> 
+     <title>API | Luna</title> 
+     <link href="https://BrunoSobrino.github.io/template-api/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"> 
+     <link href="https://BrunoSobrino.github.io/template-api/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"> 
+     <link href="https://BrunoSobrino.github.io/template-api/css/default.css" rel="stylesheet"> 
+     <link href="https://BrunoSobrino.github.io/template-api/css/style.css" rel="stylesheet"> 
+ </head> 
+ <style> 
+     h1 { 
+         text-align: center; 
+     } 
+ .text-container { 
+     display: inline-flex; 
+     align-items: center; 
+ } 
+  
+ .fire-text { 
+     font-size: 2.5em; 
+     color: #ff5733; 
+     text-shadow: 0 0 10px #ff5733, 0 0 20px #ff5733, 0 0 30px #ff5733;  
+     animation: burn 0.5s infinite alternate;  
+     display: inline-block; 
+     white-space: nowrap;  
+ } 
+  
+ @keyframes burn { 
+     0% { 
+         opacity: 1; 
+     } 
+     100% { 
+         opacity: 0.5; 
+     } 
+ } 
+ .fire-emoji { 
+     font-size: 0.9em;  
+     color: #ff5733; 
+ } 
+     .button-style { 
+         background-color: rgba(0, 0, 128, 0.0);  
+         color: #fff;  
+         border: none; 
+         padding: 10px 20px; 
+         cursor: pointer; 
+         outline: none !important;  
+         border: 0;  
+     } 
+     .button-style:active { 
+         outline: none !important; 
+         border: 0;  
+     } 
+     .age-restriction-icon { 
+         background-color: transparent; 
+         color: white; 
+         padding: 5px 0px; 
+         font-weight: bold; 
+         font-size: 16px; 
+         text-align: left; 
+         white-space: nowrap; 
+         margin-right: 5px 
+     } 
+     @media (max-width: 768px) { 
+         .age-restriction-icon { 
+         padding: 5px 0;  
+         margin-left: 10px;  
+       } 
+     }     
+ </style> 
+   <body id="page-top" class="dark-mode"> 
+     <div id="wrapper"> 
+         <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar"> 
+ <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html"> 
+     <img src="https://github.com/BrunoSobrino.png" alt="BrunoSobrino" width="48" height="48" style="border-radius: 50%;"> 
+     <div class="sidebar-brand-text mx-3" style="white-space: nowrap;">By Miko</div> 
+ </a> 
+ <audio autoplay loop> 
+     <source src="music.mp3" type="audio/mpeg"> 
+     <source src="music.wav" type="audio/wav"> 
+ </audio> 
+             <hr class="sidebar-divider my-0"> 
+             <li class="nav-item active"></li> 
+             <hr class="sidebar-divider"> 
+             <div class="sidebar-heading">Features</div> 
+             <li class="nav-item"> 
+                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDownload" aria-expanded="true" aria-controls="collapseDownload"> 
+                     <i class="fa fa-fw fa-arrow-down"></i> 
+                     <span>Downloaders</span> 
+                 </a> 
+                 <div id="collapseDownload" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar"> 
+                     <div class="py-2 collapse-inner rounded"> 
+                         <h6 class="collapse-header">Downloaders & Medias</h6> 
+                         <a class="collapse-item" target="_blank" href="/api/v1/ytmp3?url=https://youtu.be/JLWRZ8eWyZo?si=EmeS9fJvS_OkDk7p">YTMP3 V1</a> 
+                         <a class="collapse-item" target="_blank" href="/api/v2/ytmp3?url=https://youtu.be/JLWRZ8eWyZo?si=EmeS9fJvS_OkDk7p">YTMP3 V2</a> 
+                         <a class="collapse-item" target="_blank" href="/api/v1/ytmp4?url=https://youtu.be/JLWRZ8eWyZo?si=EmeS9fJvS_OkDk7p">YTMP4 V1</a> 
+                         <a class="collapse-item" target="_blank" href="/api/v2/ytmp4?url=https://youtu.be/JLWRZ8eWyZo?si=EmeS9fJvS_OkDk7p">YTMP4 V2</a> 
+                         <a class="collapse-item" target="_blank" href="/api/ytdl?url=https://youtu.be/JLWRZ8eWyZo?si=EmeS9fJvSOkDk7p">YTDL</a> 
+                         <a class="collapse-item" target="_blank" href="/api/ytplay?text=begin%20you">YT Play</a> 
+                         <a class="collapse-item" target="_blank" href="/api/spotifydl?text=maneskin%20beggin">SpotifyDL</a> 
+                         <a class="collapse-item" target="_blank" href="/api/spotifyinfo?text=https://open.spotify.com/track/3Wrjm47oTz2sjIgck11l5e">SpotifyInfo</a> 
+                         <a class="collapse-item" target="_blank" href="/api/v1/igdl?url=https://www.instagram.com/reel/Cc0NuYBg8CR/?utm_source=ig_web_copy_link">InstagramDL V1</a> 
+                         <a class="collapse-item" target="_blank" href="/api/v2/igdl?url=https://www.instagram.com/reel/Cc0NuYBg8CR/?utm_source=ig_web_copy_link">InstagramDL V2</a> 
+                         <a class="collapse-item" target="_blank" href="/api/tiktok?url=https://vm.tiktok.com/ZMjPXawEV">TikTokDL</a> 
+                         <a class="collapse-item" target="_blank" href="/api/ttimg?url=https://vm.tiktok.com/ZM2cqBRVS">TTImg</a> 
+                         <a class="collapse-item" target="_blank" href="/api/facebook?url=https://fb.watch/fOTpgn6UFQ">Facebook DL</a> 
+                         <a class="collapse-item" target="_blank" href="/api/xnxxdl?url=https://www.xnxx.com/video-11qev1b8/estudiante_latina_se_da_unos_sentones_">XNXX DL</a> 
+                     </div> 
+                 </div> 
+             </li> 
+             <li class="nav-item"> 
+                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSearch" aria-expanded="true" aria-controls="collapseSearch"> 
+                     <i class="fas fa-fw fa-search"></i> 
+                     <span>Search engines</span> 
+                 </a> 
+                 <div id="collapseSearch" class="collapse" aria-labelledby="headingSearch" data-parent="#accordionSidebar"> 
+                     <div class="py-2 collapse-inner rounded"> 
+                         <h6 class="collapse-header"> Searchs Features</h6> 
+                         <a class="collapse-item" target="_blank" href="/api/ytsearch?text=begin%20you">YT Search</a> 
+                         <a class="collapse-item" target="_blank" href="/api/spotifysearch?text=maneskin%20beggin">Spotify Search</a> 
+                         <a class="collapse-item" target="_blank" href="/api/xnxxsearch?text=prima%20sentones">XNXX Search</a> 
+                     </div> 
+                 </div> 
+             </li> 
+             <li class="nav-item"> 
+                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTools" aria-expanded="true" aria-controls="collapseTools"> 
+                     <i class="fas fa-fw fa-tools"></i> 
+                     <span>Tools</span> 
+                 </a> 
+                 <div id="collapseTools" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar"> 
+                     <div class="py-2 collapse-inner rounded"> 
+                         <h6 class="collapse-header">Tools Features</h6> 
+                         <a class="collapse-item" target="_blank" href="/api/chatgpt?text=Halo&lenguaje=es">ChatGPT</a> 
+                         <a class="collapse-item" target="_blank" href="/api/tempmail/getmail">TempMail getMail</a> 
+                         <a class="collapse-item" target="_blank" href="/api/tempmail/getmessages?mail=miusuario@ejemplo.com">TempMail getMessage</a> 
+                     </div> 
+                 </div> 
+             </li> 
+             <li class="nav-item"> 
+                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseNsfw" aria-expanded="true" aria-controls="collapseNsfw"> 
+                     <i class="fas fa-exclamation-triangle"></i> 
+                     <span>NSFW</span> 
+                 </a> 
+                 <div id="collapseNsfw" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar"> 
+                     <div class="py-2 collapse-inner rounded"> 
+                         <h6 class="collapse-header">NSFW Random</h6> 
+                         <a class="collapse-item" target="_blank" href="/api/nsfw/nsfwass">nsfwass</a> 
+                         <a class="collapse-item" target="_blank" href="/api/nsfw/nsfwbdsm">nsfwbdsm</a> 
+                         <a class="collapse-item" target="_blank" href="/api/nsfw/nsfwcum">nsfwcum</a> 
+                         <a class="collapse-item" target="_blank" href="/api/nsfw/nsfwero">nsfwero</a> 
+                         <a class="collapse-item" target="_blank" href="/api/nsfw/nsfwfemdom">nsfwfemdom</a> 
+                         <a class="collapse-item" target="_blank" href="/api/nsfw/nsfwfoot">nsfwfoot</a> 
+                         <a class="collapse-item" target="_blank" href="/api/nsfw/nsfwglass">nsfwglass</a> 
+                         <a class="collapse-item" target="_blank" href="/api/nsfw/nsfwloli">nswfloli</a> 
+                         <a class="collapse-item" target="_blank" href="/api/nsfw/nsfworgy">nsfworgy</a> 
+                         <a class="collapse-item" target="_blank" href="/api/nsfw/nsfwtrap">nsfwtrap</a> 
+                         <a class="collapse-item" target="_blank" href="/api/nsfw/ecchi">ecchi</a> 
+                         <a class="collapse-item" target="_blank" href="/api/nsfw/hentai">hentai</a> 
+                         <a class="collapse-item" target="_blank" href="/api/nsfw/yuri">yuri</a> 
+                         <a class="collapse-item" target="_blank" href="/api/nsfw/yaoi">yaoi</a> 
+                     </div> 
+                 </div> 
+             </li> 
+             <li class="nav-item"> 
+                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse18plus" aria-expanded="true" aria-controls="collapse18plus"> 
+                     <span class="age-restriction-icon">+18</span> 
+                     <span>Random +18</span> 
+                 </a> 
+                 <div id="collapse18plus" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar"> 
+                     <div class="py-2 collapse-inner rounded"> 
+                         <h6 class="collapse-header">+18 Random</h6> 
+                         <a class="collapse-item" target="_blank" href="/api/adult/packgirl">Packs Girl</a> 
+                         <a class="collapse-item" target="_blank" href="/api/adult/packmen">Packs Mens</a> 
+                         <a class="collapse-item" target="_blank" href="/api/adult/gawrgura">Gawr Gura</a> 
+                         <a class="collapse-item" target="_blank" href="/api/adult/booty">Booty</a> 
+                         <a class="collapse-item" target="_blank" href="/api/adult/furro">Furro</a> 
+                         <a class="collapse-item" target="_blank" href="/api/adult/imglesbian">IMG Lesbian</a> 
+                         <a class="collapse-item" target="_blank" href="/api/adult/panties">Panties</a> 
+                         <a class="collapse-item" target="_blank" href="/api/adult/pechos">Pechos</a> 
+                         <a class="collapse-item" target="_blank" href="/api/adult/pene">Pene</a> 
+                         <a class="collapse-item" target="_blank" href="/api/adult/porno">Porno</a> 
+                         <a class="collapse-item" target="_blank" href="/api/adult/tetas">Tetas</a> 
+                         <a class="collapse-item" target="_blank" href="/api/adult/videoxxx">Viedeo XXX</a> 
+                         <a class="collapse-item" target="_blank" href="/api/adult/videoxxxlesbi">Viedeo XXX Lésbico</a> 
+                     </div> 
+                 </div> 
+             </li> 
+             <li class="nav-item"> 
+                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapAnimes" aria-expanded="true" aria-controls="collapAnimes"> 
+                     <i class="fas fa-fw fa-tv"></i> 
+                     <span>Random Anime</span> 
+                 </a> 
+                 <div id="collapAnimes" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar"> 
+                     <div class="py-2 collapse-inner rounded"> 
+                         <h6 class="collapse-header">Anime Random</h6> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/lolivid">loli video</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/cosplay">cosplay</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/akira">akira</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/akiyama">akiyama</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/anna">anna</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/asuna">asuna</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/ayuzawa">ayuzawa</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/boruto">boruto</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/chiho">chiho</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/chitoge">chitoge</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/deidara">deidara</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/eba">eba</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/elaina">elaina</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/emilia">emilia</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/erza">erza</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/hestia">hestia</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/hinata">hinata</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/inori">inori</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/isuzu">isuzu</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/itachi">itachi</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/itori">itori</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/kaga">kaga</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/kagura">kagura</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/kaori">kaori</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/keneki">keneki</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/kotori">kotori</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/kurumi">kurumi</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/madara">madara</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/mikasa">mikasa</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/miku">miku</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/minato">minato</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/naruto">naruto</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/nezuko">nezuko</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/sagiri">sagiri</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/sakura">sakura</a> 
+                         <a class="collapse-item" target="_blank" href="/api/anime/sasuke">sasuke</a> 
+                     </div> 
+                 </div> 
+             </li> 
+             <hr class="sidebar-divider"> 
+             <div class="sidebar-heading">Contact</div> 
+             <li class="nav-item"> 
+                 <a class="nav-link" href="https://api.whatsapp.com/send/?phone=6285766827288&text=&type=phone_number&app_absent=0"> 
+                     <i class="fab fa-fw fa-whatsapp"></i> 
+                     <span>WhatsApp</span> 
+                 </a> 
+             </li> 
+             <li class="nav-item"> 
+                 <a class="nav-link" href="https://www.paypal.com/paypalme/TheShadowBrokers133"> 
+                     <i class="fab fa-fw fa-paypal"></i> 
+                     <span>PayPal</span> 
+                 </a> 
+             </li> 
+             <li class="nav-item"> 
+                 <a class="nav-link" href="https://github.com/BrunoSobrino"> 
+                     <i class="fab fa-fw fa-github"></i> 
+                     <span>GitHub</span> 
+                 </a> 
+             </li>             
+             <hr class="sidebar-divider"> 
+             <button id="toggleButton" class="button-style">Pause Music</button> 
+         </ul> 
+ <!-- Sidebar --> 
+ <div id="content-wrapper" class="d-flex flex-column"> 
+     <div id="content"> 
+         <!-- TopBar --> 
+         <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top"> 
+             <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3"> 
+                 <i class="fa fa-bars"></i> 
+             </button> 
+             <div class="text-container"> 
+                 <h1 class="my-4 fire-text">API - Luna <span class="fire-emoji">🌛</span></h1> 
+             </div> 
+             <ul class="navbar-nav ml-auto"> 
+                 <div class="topbar-divider d-none d-sm-block"></div> 
+             </ul> 
+         </nav> 
+         <!-- Sidebar --> 
+                 <!-- Container Fluid--> 
+                 <div class="container-fluid" id="container-wrapper"> 
+                     <div class="card h-50 mb-4"> 
+                         <div class="card-body"> 
+                             <div class="row align-items-center"> 
+                                 <div class="col mr-2"> 
+                                     <h3 style="margin-bottom: 0;"><i class="fas fa-ruler text-danger"></i> INFORMATION:</h3> 
+                                     <div class="card-body mb-3"> 
+                                         <ol> 
+                                             <li>API in development.</li> 
+                                             <li>API 100% free.</li> 
+                                         </ol> 
+                                     </div> 
+                                 </div> 
+                                 <div class="col-auto"></div> 
+                             </div> 
+                         </div> 
+                     </div> 
+                     <div class="row mb-3"> 
+                         <!-- Earnings (Annual) Card Example --> 
+                         <div class="col-xl-3 col-md-6 mb-4"> 
+                             <div class="card h-50"> 
+                                 <div class="card-body"> 
+                                     <div class="row no-gutters align-items-center"> 
+                                         <div class="col mr-2"> 
+                                             <div class="text-xs font-weight-bold text-uppercase mb-1">Visitor</div> 
+                                             <div id="totalVisitors"></div> 
+                                             <!-- div class="h5 mb-0 font-weight-bold"><%= totalVisitors %></div --> 
+                                         </div> 
+                                         <div class="col-auto"> 
+                                             <i class="fa fa-user faa-ring animated fa-2x text-primary"></i> 
+                                         </div> 
+                                     </div> 
+                                 </div> 
+                             </div> 
+                         </div> 
+                         <!-- Pending Requests Card Example --> 
+                         <div class="col-xl-3 col-md-6 mb-4"> 
+                             <div class="card h-50"> 
+                                 <div class="card-body"> 
+                                     <div class="row no-gutters align-items-center"> 
+                                         <div class="col mr-2"> 
+                                             <div class="text-xs font-weight-bold text-uppercase mb-1">Requests</div> 
+                                             <div id="totalRequests"></div> 
+                                             <!-- div class="h5 mb-0 font-weight-bold"><%= totalRequests %></div --> 
+                                         </div> 
+                                         <div class="col-auto"> 
+                                             <i class="fas fa-calendar faa-wrench animated fa-2x text-primary"></i> 
+                                         </div> 
+                                     </div> 
+                                 </div> 
+                             </div> 
+                         </div> 
+                     </div> 
+                 </div> 
+                 <!-- Container Fluid --> 
+             </div> 
+             <!-- Footer --> 
+             <footer class="sticky-footer"> 
+                 <div class="container my-auto"> 
+                     <div class="copyright text-center my-auto"> 
+                         Hecho por <i class="fa fa-heart faa-flash animated"></i> 
+                         <a href="https://github.com/BrunoSobrino" target="_blank" style="color: #fff;">Miko</a> 
+                     </div> 
+                 </div> 
+             </footer> 
+             <!-- Footer --> 
+         </div> 
+     </div> 
+  
+     <!-- Scroll to top --> 
+     <a class="scroll-to-top rounded" href="#page-top"> 
+         <i class="fas fa-angle-up"></i> 
+     </a> 
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js"></script> 
+ <script> 
+     fetch('/status').then(response => response.json()).then(data => { 
+         document.getElementById('totalRequests').textContent = data.totalRequests; 
+         document.getElementById('totalVisitors').textContent = data.totalVisitors; 
+       }); 
+     document.addEventListener("DOMContentLoaded", function () { 
+         const audioElement = document.querySelector("audio"); 
+         const toggleButton = document.getElementById("toggleButton"); 
+         function toggleAudio() { 
+             if (audioElement.paused) { 
+                 audioElement.play(); 
+                 toggleButton.textContent = "Pause Music"; 
+             } else { 
+                 audioElement.pause(); 
+                 toggleButton.textContent = "Resume Music"; 
+             } 
+         } 
+         toggleButton.addEventListener("click", toggleAudio); 
+     }); 
+ </script> 
+     <script src="https://BrunoSobrino.github.io/template-api/vendor/jquery/jquery.min.js"></script> 
+     <script src="https://BrunoSobrino.github.io/template-api/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+     <script src="https://BrunoSobrino.github.io/template-api/vendor/jquery-easing/jquery.easing.min.js"></script> 
+     <script src="https://BrunoSobrino.github.io/template-api/js/ruang-admin.min.js"></script> 
+ </body> 
+ </html>
