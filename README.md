@@ -5,8 +5,7 @@
 ------------------
 
 ## —◉ APIs online:
-- API 1: [https://api.boxmine.xyz/status](http://api.boxmine.xyz/status)
-- API 2: [https://api.brunosobrino.repl.co/status](https://api.brunosobrino.repl.co/status)
+- API : [https://api-luna.vercel.app/status](https://api-luna.vercel.app/status)
 
 ------------------
 
