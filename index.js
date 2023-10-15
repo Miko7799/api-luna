@@ -13,7 +13,7 @@ const visitors = new Set();
 let totalRequests = 0;
 let totalVisitors = 0;
 
-var allowedOrigins = ['https://api.boxmine.xyz', 'https://api.brunosobrino.repl.co'];
+var allowedOrigins = ['https://api-luna.vercel.app'];
 
 app.set('trust proxy', 1)
 
@@ -230,9 +230,9 @@ setInterval(checkRepoUpdates, 300000); //300000
 app.listen(port, function() {
     const line = chalk.yellow('==========================================');
     const serverUrl = 'http://localhost:' + port;
-    const serverMessage = chalk.green.bold('| Server activo: ') + chalk.blue.bold(serverUrl);
-    const creatorMessage = chalk.magenta.bold('| Creador: BrunoSobrino');
-    const numberMessage = chalk.magenta.bold('| Numero: +52 1 999 612 5657');
+    const serverMessage = chalk.green.bold('| Server aktif: ') + chalk.blue.bold(serverUrl);
+    const creatorMessage = chalk.magenta.bold('| Creator : Miko');
+    const numberMessage = chalk.magenta.bold('| Number : 62882-2108-7236');
     const apiMessage = chalk.red.bold('|          "Api Rest Free"');
     console.log(chalk.yellow(line));
     console.log(apiMessage);
