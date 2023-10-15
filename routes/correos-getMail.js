@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
     res.send(formattedResults);
   } catch (error) {
     console.error(error);
-    const errorMessage = 'Error al generar el correo aleatorio';
+    const errorMessage = 'Error generating random email';
     const formattedError = JSON.stringify({
       status: false,
       error: errorMessage
