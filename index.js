@@ -126,6 +126,7 @@ app.use('/api/v1/igdl', igdl1);
 app.use('/api/v2/igdl', igdl2);
 app.use('/api/tempmail/getmail', getmail);
 app.use('/api/tempmail/getmessages', getmessages);
+app.use('/api/toanime', toanime);
 app.use('/api/facebook', facebook);
 app.use('/api/nsfw/nsfwass', nsfwass);
 app.use('/api/nsfw/nsfwbdsm', nsfwbdsm);
