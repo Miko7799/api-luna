@@ -62,6 +62,7 @@ const igdl1 = require('./routes/igdl');
 const igdl2 = require('./routes/igdl2');
 const getmail = require('./routes/correos-getMail');
 const getmessages = require('./routes/correos-getMessages');
+const toanime = require('./routes/toanime');
 const facebook = require('./routes/facebook');
 const gawrgura = require('./routes/gawrgura');
 const packmen = require('./routes/packmen');
